@@ -1,0 +1,70 @@
+/* Add application styles & imports to this file! */
+body {
+  font-family: sans-serif;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+  height: 250px;
+}
+
+.property-buttons {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.property-button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.property-button.active {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.chart-svg {
+  width: 100%;
+  height: 250px;
+  display: block;
+  pointer-events: all;
+  background-color: rgba(255, 0, 0, 0.027);
+}
+
+.bar {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  stroke: transparent;
+  stroke-width: 2;
+}
+
+.bar:hover {
+  filter: brightness(85%) !important;
+}
+
+.bar.selected {
+  stroke: #000;
+}
+
+.scale-label {
+  font-size: 12px;
+  fill: #666;
+}
+
+.value-label {
+  font-size: 11px;
+  fill: #666;
+}
+
+.scenario-label {
+  font-size: 11px;
+  font-weight: bold;
+  fill: rgba(0, 0, 0, 0.8);
+}
